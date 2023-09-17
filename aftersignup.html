@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ 
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Krub:wght@500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="aftersignup.css">
+  <title>Labotics</title>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg  bg-gradient fs-5 bgp sticky-top">
+ 
+    <div class="container-fluid">
+      <a class="navbar-brand fs-5 " href="#">Labotics</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item mx-2">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item mx-1">
+            <a class="nav-link" href="about.html">About</a>
+          </li>
+          <li class="nav-item dropdown mx-1">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Blogs
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </li>
+          <li class="nav-item mx-2">
+            <a class="nav-link disabled " aria-disabled="true">Register as lab</a>
+          </li>
+        </ul>
+        <div class="login ">
+         
+          <!-- <button type="button" class="btn btn-primary btn-sm bg-gradient"><a href="login.html" style="text-decoration: none;" >Login</a></button> -->
+          <button type="button" class="btn btn-danger btn-sm bg-gradient"><a href="signup.html" style="text-decoration: none;">Sign Out</a></button>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <div class="slider rounded" style="width: 1450px; margin: 35px";>
+    <div id="carouselExampleRide" class="carousel slide rounded" data-bs-ride="true">
+      <div class="carousel-inner rounded">
+        <div class="carousel-item active rounded">
+          <img src="images/slider8.jpg" class="d-block w-100 br rounded" alt="..." >
+        </div>
+        <div class="carousel-item rounded">
+          <img src="images/slider11.jpg" class="d-block w-100 rounded" alt="...">
+        </div>
+        <div class="carousel-item rounded">
+          <img src="images/slider9.jpg" class="d-block w-100 rounded" alt="...">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleRide" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon "  aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleRide" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </div>
+
+  
+  <div class="searching-panel rounded" style="background-image: url(images/searchingImg.jpg);background-position: center; background-repeat: no-repeat; background-size: cover;">
+  <div class="left-panel">
+  <h1>Locate labs that fit your <span style="color: red;">Budgets..</span></h1>
+  </div>
+  <div class="right-panel">
+    <div class="city">
+      <input type="text"  placeholder="Enter City" >
+    </div>
+    <div class="test">
+      <input type="text" placeholder="Add Test to find labs">
+      <!-- <input type="submit"> -->
+      <input type="submit" class="bg-danger rounded" >
+    </div>
+
+  </div>
+    <!-- <div class="submit">
+      <input type="submit">
+    </div> -->
+  </div>
+
+<div class="footer">
+          <div class="card text-center" style="margin-top: 60px;">
+            <div class="card-body" style="background: #3e415b; color: #fff;">
+              <h5 class="card-title">@Labotics <i class="fa-solid fa-heart-pulse" style="color: red; margin-left: 10px;"></i></h5>
+              <p class="card-text">Empower yourself with Labotics and take control of your healthcare decisions like never before.
+              </p>
+              <a href=" " class="btn bg-primary text-white"  ><i class="fa-solid fa-arrow-up"></i> Go To Top</a>
+            </div>
+          </div>
+        </div>
+  
+  <!-- <script src="login.js" type="module"></script> -->
+<script src="js/bootstrap.bundle.min.js"></script>
+  <script src="logic.js"></script>
+  <script src="https://kit.fontawesome.com/02dcb82b73.js" crossorigin="anonymous"></script>
+  <script type="module">
+    // Import the functions you need from the SDKs you need
+   import { initializeApp } from 'https://www.gstatic.com/firebasejs/10.3.1/firebase-app.js';
+   import { getAuth } from 'https://www.gstatic.com/firebasejs/10.3.1/firebase-auth.js';
+    // TODO: Add SDKs for Firebase products that you want to use
+    // https://firebase.google.com/docs/web/setup#available-libraries
+  
+    // Your web app's Firebase configuration
+    const firebaseConfig = {
+      apiKey: "AIzaSyCDJPkMheOnWSJnMIozfsQcdA2Scsd5P8Q",
+      authDomain: "labquest-3aea4.firebaseapp.com",
+      projectId: "labquest-3aea4",
+      storageBucket: "labquest-3aea4.appspot.com",
+      messagingSenderId: "637763619838",
+      appId: "1:637763619838:web:5f1674f6cb716765f0ceaf"
+    };
+  
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+    const auth = getAuth(app);
+  </script> 
+  <script src="aftersignup.js" defer type="module"></script>
+  
+</body>
+
+</html>
